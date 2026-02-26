@@ -1,8 +1,58 @@
 {
-  "creation_date": "2026-02-03T13:14:00.452871",
-  "source_file": "bioactivity_sample_100k.parquet",
-  "records_input": 100000,
-  "records_output": 98642,
-  "unique_molecules": 89114,
-  "unique_targets": 2453,
-  "active_compounds": 
+  "dataset_name": "ChEMBL Bioactivity - Cleaned",
+  "created_date": "2026-02-27 00:00:12",
+  "source": "ChEMBL 36",
+  "organism": "Homo sapiens",
+  "n_records": 57764,
+  "n_unique_molecules": 53913,
+  "n_unique_targets": 2007,
+  "n_unique_assays": 22968,
+  "activity_types": {
+    "IC50": 25962,
+    "Potency": 18149,
+    "Ki": 8270,
+    "EC50": 4042,
+    "Kd": 1341
+  },
+  "filters_applied": {
+    "organism": "Homo sapiens",
+    "assay_types": [
+      "B",
+      "F"
+    ],
+    "relationship": "D",
+    "standard_units": "nM",
+    "value_range": "0.001 - 100,000,000 nM",
+    "confidence_score": "\u2265 6",
+    "standard_relation": "= (exact)",
+    "smiles": "NOT NULL"
+  },
+  "target_variable": "pActivity",
+  "target_range": {
+    "min": 1.0,
+    "max": 12.0,
+    "mean": 6.264422267544424,
+    "median": 6.100015437450609
+  },
+  "molecular_descriptors": [
+    "MolecularWeight",
+    "NumAtoms",
+    "NumHeavyAtoms",
+    "NumHeteroatoms",
+    "NumHDonors",
+    "NumHAcceptors",
+    "LogP",
+    "TPSA",
+    "NumAromaticRings",
+    "NumAliphaticRings",
+    "NumRings",
+    "AromaticProportion",
+    "NumRotatableBonds",
+    "NumSaturatedRings",
+    "FractionCSP3",
+    "MolMR",
+    "Lipinski_Violation"
+  ],
+  "n_features": 35,
+  "drug_like_percentage": 88.80098331140502
+}

@@ -1,0 +1,8 @@
+{
+  "creation_date": "2026-02-03T13:14:00.452871",
+  "source_file": "bioactivity_sample_100k.parquet",
+  "records_input": 100000,
+  "records_output": 98642,
+  "unique_molecules": 89114,
+  "unique_targets": 2453,
+  "active_compounds": 
