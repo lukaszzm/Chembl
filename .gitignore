@@ -1,2 +1,3 @@
 *.tar.gz
 *.db
+data/features/* 

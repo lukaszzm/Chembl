@@ -1,18 +1,14 @@
 {
   "dataset_name": "ChEMBL Bioactivity - Cleaned",
-  "created_date": "2026-02-27 00:00:12",
+  "created_date": "2026-06-09 15:00:58",
   "source": "ChEMBL 36",
   "organism": "Homo sapiens",
-  "n_records": 57764,
-  "n_unique_molecules": 53913,
-  "n_unique_targets": 2007,
-  "n_unique_assays": 22968,
+  "n_records": 26194,
+  "n_unique_molecules": 24815,
+  "n_unique_targets": 1657,
+  "n_unique_assays": 14628,
   "activity_types": {
-    "IC50": 25962,
-    "Potency": 18149,
-    "Ki": 8270,
-    "EC50": 4042,
-    "Kd": 1341
+    "IC50": 26194
   },
   "filters_applied": {
     "organism": "Homo sapiens",
@@ -25,14 +21,16 @@
     "value_range": "0.001 - 100,000,000 nM",
     "confidence_score": "\u2265 6",
     "standard_relation": "= (exact)",
+    "standard_type": "IC50",
     "smiles": "NOT NULL"
   },
   "target_variable": "pActivity",
+  "target_variable_note": "pActivity = pIC50 = -log10(IC50_in_M); wy\u017csza warto\u015b\u0107 = bardziej aktywna cz\u0105steczka",
   "target_range": {
-    "min": 1.0,
+    "min": 1.010550182333308,
     "max": 12.0,
-    "mean": 6.264422267544424,
-    "median": 6.100015437450609
+    "mean": 6.789788699227076,
+    "median": 6.838631997765025
   },
   "molecular_descriptors": [
     "MolecularWeight",
@@ -53,6 +51,14 @@
     "MolMR",
     "Lipinski_Violation"
   ],
+  "morgan_fingerprints": {
+    "file": "morgan_fp_matrix.npy",
+    "type": "ECFP4",
+    "radius": 2,
+    "n_bits": 2048,
+    "n_molecules": 26194,
+    "note": "Wiersze fp_matrix odpowiadaj\u0105 wierszom bioactivity_cleaned.csv"
+  },
   "n_features": 35,
-  "drug_like_percentage": 88.80098331140502
+  "drug_like_percentage": 84.7178743223639
 }
